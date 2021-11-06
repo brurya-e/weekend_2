@@ -1,22 +1,23 @@
 .navbar {
-height: 30vh;
-/* flex-direction: column; */
+height: 25vh !important;
 
 }
-.logo {
-    width: 40%;
+.navbar .logo {
+    width: 40% ;
+    margin-left: 2rem;
    
 }
 
 
-.menu {
-    width: 40%;
+.navbar .menu {
+    width: 40% ;
     flex-direction: column;
     padding: 0;
-    align-items: flex-start;
+    align-items: flex-start ;
+    
 }
-.m {
-    padding-top: 15px ;
+.navbar .m {
+    padding-top: 15px;
 }
 
 .home:after,
@@ -35,8 +36,8 @@ height: 30vh;
             transition: all 1s;
 
         }
-.links {
-    width: 20%;
+.navbar .links {
+    width: 20% ;
     flex-direction: column;
   
 }
@@ -46,42 +47,41 @@ height: 30vh;
         /********************************************************/
 .home-page{
     height: 70vh;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     
    
 }
-.name{
+.home-page .name{
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 1rem ;;
     text-align: center;
     
 }
-.subtitle
+.home-page .subtitle
 {
     margin-top: 2rem;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 2rem;
 }
-.download_cv{  
-    text-align: center;
-    margin: 0;
+.home-page .download_cv{  
+    text-align: center ;
+    margin: 0 ;
     padding: 0rem 3rem;
 }
  /********************************************/
         /*  aboute page*/
  /*********************************************/
 .aboute-page{
+    display: flex  !important;
     height: 70vh;
-    display: flex;
     flex-direction: column;
     align-items: center;
     top:30vh;
         
 }
 .aboute-page .title{
-    /* margin-top: 32vh; */
     margin: 0;
     margin-top: 1rem;
     font-size: 20px;
@@ -96,4 +96,6 @@ height: 30vh;
 .aboute-page .download_cv{  
     line-height: 2;
     font-size: 20px;
+    /* text-align: center; */
+    padding: .3rem 2rem;
 }
