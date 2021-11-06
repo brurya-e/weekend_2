@@ -1,0 +1,99 @@
+.navbar {
+height: 30vh;
+/* flex-direction: column; */
+
+}
+.logo {
+    width: 40%;
+   
+}
+
+
+.menu {
+    width: 40%;
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+}
+.m {
+    padding-top: 15px ;
+}
+
+.home:after,
+        .aboute:after,
+        .protfolio:after,
+        .contact::after {
+            content: '';
+            position: absolute;
+            background-color: #DABBA0;
+            width: 80%;
+            height: 3px;
+            top: 0;
+            right: 0;
+
+            transform: translatex(-125%);
+            transition: all 1s;
+
+        }
+.links {
+    width: 20%;
+    flex-direction: column;
+  
+}
+
+  /*********************************************************/
+        /* home page                                             */
+        /********************************************************/
+.home-page{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+.name{
+    margin: 0;
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+.subtitle
+{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.download_cv{  
+    text-align: center;
+    margin: 0;
+    padding: 0rem 3rem;
+}
+ /********************************************/
+        /*  aboute page*/
+ /*********************************************/
+.aboute-page{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:30vh;
+        
+}
+.aboute-page .title{
+    /* margin-top: 32vh; */
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 20px;
+    
+}
+.aboute-page .subtitle{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+.aboute-page .download_cv{  
+    line-height: 2;
+    font-size: 20px;
+}

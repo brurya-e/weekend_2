@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet"  media="screen and (max-width:560px)" href="/css/mobile.css">
+
+    <title>Brurya Eshvege</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;  
+            color: #47484A;      }
+        /*********************************************************/
+        /* navbar                                          */
+        /********************************************************/
+
+        .navbar {
+            position: sticky;
+            top:0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100vw;
+            height: 10vh;
+            background-color: #DABBA0;
+            font-size: 20px;
+        }
+
+        .logo {
+            width: 10%;
+            height: 90%;
+            padding: 10px 10px;
+            /* background-image: url(/img/logo.png); */
+        }
+
+        .logo_img {
+            width: 50%;
+            height: 90%;
+
+        }
+
+        .menu {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        .m {
+            position: relative;
+            padding: 0px 10px;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .home:before,
+        .aboute:before,
+        .protfolio::before,
+        .contact::before {
+            content: '';
+            position: absolute;
+            background-color: #47484A;
+            width: 80%;
+            height: 3px;
+            bottom: 0%;
+
+            transform: translatex(125%);
+            transition: all 1s;
+
+        }
+
+        .home:after,
+        .aboute:after,
+        .protfolio:after,
+        .contact::after {
+            content: '';
+            position: absolute;
+            background-color: #47484A;
+            width: 80%;
+            height: 3px;
+            top: 0%;
+            right: 0;
+
+            transform: translatex(-125%);
+            transition: all 1s;
+
+        }
+
+        .home:hover::before,
+        .home:hover::after,
+        .aboute:hover::before,
+        .aboute:hover::after,
+        .protfolio:hover::before,
+        .protfolio:hover::after,
+        .contact:hover::before,
+        .contact:hover::after {
+            transform: translatex(0%);
+
+        }
+
+        .links {
+            width: 8%;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+        
+        .linkdin .facebook .twitter {
+            position: absolute;
+            /* overflow: hidden; */
+
+        }
+
+        /*********************************************************/
+        /* home page                                             */
+        /********************************************************/
+        .home-page{
+            position: relative;
+            height: 90vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+           
+            color:#47484A
+
+        }
+        .home-page::before{
+            content: "";
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            
+            background-image:    url(/img/pexels-photo-270360.jpeg);
+            background-size:     cover;                     
+            background-repeat:   no-repeat;
+            background-position: center center; 
+            opacity: 0.3;
+        }
+
+        .name{
+            grid-area: 1 / 1 / 2 / 2;
+            margin-left: 5rem;
+            margin-top: 5rem;
+            line-height: 1.5;
+            
+        }
+        .name .h {
+            font-size: 28px;
+        }
+        .name .hs {
+            font-size: 24px;
+        }
+       
+        .subtitle
+        {
+            grid-area: 2 / 1 / 4 / 2;
+            margin-top: 2rem;
+            margin-left: 5rem;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+    
+
+        }
+        .download_cv{
+            grid-area: 4 / 1 / 5 / 2;
+
+            margin-left: 15rem;
+            margin-bottom: 5rem;
+            margin-right: 5rem;
+            border-radius: 18px;
+            text-align: center;
+            line-height: 3;
+            font-size: 24px;
+            background-color: #DABBA0;
+            color:#47484A
+            
+        }
+        .mypic{
+            grid-area: 1 / 2 / 5 / 3;
+            background-image: url(/img/1474478625.png) ;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 15rem;
+            margin-right: 5rem;
+            margin-bottom: 0.7rem;
+
+
+        }
+        /********************************************/
+        /*  aboute page*/
+        /*********************************************/
+        .aboute-page{
+            position: relative;
+            height: 90vh;
+            width: 100vw;
+            display: grid;
+            /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+           
+            color:#47484A
+
+        }
+        .aboute-page::before{
+            content: "";
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            
+            background-image:    url(/img/pexels-photo-270360.jpeg);
+            background-size:     cover;                     
+            background-repeat:   no-repeat;
+            background-position: center center; 
+            opacity: 0.3;
+        }
+        .title{
+            grid-area: 1 / 1 / 2 / 2;
+            margin-left: 5rem;
+            margin-top: 5rem;
+            font-size: 25px;
+            
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"> <img class="logo_img" src="/img/logo.png" alt=""> </div>
+
+        <div class="menu">
+
+            <div class="m home"> <a href="#home-page">Home</a> </div>
+            <div class="m aboute"> <a href="#aboute-page">Aboute</a> </div>
+            <div class="m protfolio">Protfolio</div>
+            <div class="m contact">Contact</div>
+
+        </div>
+
+        <div class="links">
+
+            <div class="l linkdin"> <a href="#"><i class="fab fa-linkedin"></i></a></div>
+            <div class="l facebook"><a href="#"><i class="fab fa-facebook"></i></a> </div>
+            <div class="l twitter"><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+
+        </div>
+    </div>
+
+    <div id="home-page" class="home-page">
+        <div class="name">  <div class="h">Brurya Eshvege</div> 
+                           <div class="hs">Software Engineer</div> 
+        </div>
+        <!-- <div class="title"><h2> Software Engineer</h2></div> -->
+        <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ipsa impedit deserunt adipisci exercitationem repellendus fugiat ab ullam culpa facilis itaque quo rem dolores harum animi consequatur! Quisquam, minima sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ex?</div>  
+        <div class="mypic"> </div>
+        <div class="download_cv"><a href="#">hire me!</a></div>
+    </div>
+
+    <!-- TODO:navbar link not work when is in another div -->
+
+    <div id="aboute-page" class="aboute-page">
+        <div class="title">Hi, Nice to meet you</div>
+        <div class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem eius alias ipsum cupiditate non placeat maxime nisi ad culpa id delectus obcaecati quisquam, sapiente numquam nesciunt animi architecto ullam consequuntur! Natus quo quasi, error sit vel minima asperiores a enim dolores. Impedit, fugiat! Possimus tenetur laboriosam sint itaque rem libero ipsum officiis porro nisi autem quis, aliquid corrupti voluptate totam repellat sit iste dolorum, voluptatibus veniam, facere saepe. Molestiae minima soluta exercitationem modi assumenda nam quod at a odit ab similique placeat impedit enim perspiciatis eos dolor nobis aperiam atque ducimus, est itaque ipsum fugiat excepturi hic? Reprehenderit sed explicabo tempore ducimus velit perferendis blanditiis eos voluptas soluta vitae cumque et eligendi nulla, neque sequi ipsam similique? Quis, consequuntur cumque.</div>
+
+        
+        <div class="download_cv"><a href="#">hire me!</a></div>
+    </div>
+
+</body>
+
+</html>
