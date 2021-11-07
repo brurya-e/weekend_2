@@ -83,19 +83,20 @@ height: 25vh !important;
 }
 .aboute-page .title{
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 20px;
     
 }
 .aboute-page .subtitle{
+    margin: 0.3rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 15px;
 }
 
 .aboute-page .download_cv{  
+    margin: 0;
     line-height: 2;
     font-size: 20px;
-    /* text-align: center; */
     padding: .3rem 2rem;
 }
